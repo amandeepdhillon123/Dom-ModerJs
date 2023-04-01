@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="div">
+
+        <p> i am child elelment</p>
+    </div>
+    <divclass="div2">
+
+        <p id="para"> i am child elelment ram tram</p>
+    </div>
+</body>
+
+</html>
+<script>
+
+    
+
+//  adding elment 
+
+//  document.create elemet
+/*
+
+let box1= document.querySelector(".div");
+
+let box2= document.createElement('h1');
+ box2.innerText="hello";
+
+ box1.append(box2)
+
+ */
+
+
+
+
+// textnodes
+
+
+
+let box1= document.querySelector(".div");
+
+let box2= document.createElement('h1');
+let box3= document.createTextNode('hello i am nodes');
+box2.append(box3)
+box1.append(box2)
+
+
+// Insert adjacent html 
+
+let bo1= document.querySelector(".div");
+let bo3= document.createElement('h1');
+bo3.innerText=" i am heading 3"
+let bo2= document.createElement('h1');
+bo2.innerText=" i am ooper";
+
+ 
+bo1.insertAdjacentElement("beforebegin",bo2)
+bo2.insertAdjacentElement("beforebegin",bo3)
+
+document.body.append(bo1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
