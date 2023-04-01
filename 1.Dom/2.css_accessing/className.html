@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ramS{
+            background-color: red;
+        }
+        .ram{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="ram" class="ramS">
+     <p>hello i am para tag</p>
+    </div>
+</body>
+</html>
+
+<script>
+//     let box=document.getElementById('ram').className ;
+//    console.log(box)
+
+let box=document.getElementById('ram').classList ;
+
+box.add("ram")
+</script>
