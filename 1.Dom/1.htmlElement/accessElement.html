@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="head">I head tag 1</h1>
+    <!-- <h1 id="head ">I head tag 2</h1> -->
+
+    <p class="para">para tag 1</p>
+    <p class="para">para tag 2</p>
+    <div class="div">div tag
+
+        <p> i am child elelment</p>
+    </div>
+</body>
+
+</html>
+<script>
+
+    // get elementby id  
+
+let box= document.getElementById("head");
+// console.log(box)
+
+//  get by class names
+
+let box1= document.getElementsByClassName("para");
+
+for(let i=0;i<box1.length;i++)
+{
+    // console.log(box1[i])
+}
+
+
+//  get by tag names
+
+let box2= document.getElementsByTagName("p");
+
+for(let i=0;i<box2.length;i++)
+{
+    // console.log(box2[i])
+}
+
+// querySelctor 
+
+let box3= document.querySelector("p");
+// console.log(box3)
+
+// for(let i=0;i<box3.length;i++)
+// {
+//     console.log(box3)
+
+// }
+
+
+// queyselectorall
+
+let box4= document.querySelectorAll("p");
+
+// console.log(box4[0])
+
+for(let i=0;i<box4.length;i++)
+{
+    console.log(box4[i])
+
+}
+
+
+
+
+
+
+
+
+
+</script>
